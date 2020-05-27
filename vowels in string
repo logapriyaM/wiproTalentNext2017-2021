@@ -1,0 +1,52 @@
+import  java.util.Scanner;
+public class Character
+{
+public static void main(String[] args)
+{
+int x=0,i=0;
+char[] ch=new char[100];
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+if(s.contains("a"))
+{
+	ch[i]='a';
+                   i++;
+	x=1;
+}
+if(s.contains("e"))
+{
+	ch[i]='e';
+                   i++;
+	x=1;
+}
+if(s.contains("i"))
+{
+	ch[i]='i';
+                   i++;
+	x=1;
+}
+if(s.contains("o"))
+{
+	ch[i]='o';
+                   i++;
+	x=1;
+}
+if(s.contains("u"))
+{
+	ch[i]='u';
+                   i++;
+	x=1;
+}
+if(x==0)
+{
+System.out.println("Thank you");
+}
+else
+for(char c:ch)
+{
+System.out.print(c);
+}
+}
+}
+
+
