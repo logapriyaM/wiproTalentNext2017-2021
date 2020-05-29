@@ -1,0 +1,224 @@
+// programm to find alphabets digits or special charcters
+
+import java.util.*;
+import java.lang.Character;
+public class ADS
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+char ch =sc.next().charAt(0);
+if(Character.isLetter(ch))
+{
+System.out.println("Alphabets");
+}
+else if(Character.isDigit(ch))
+{
+System.out.println("Digits");
+}
+else
+{
+System.out.println("special character");
+}
+}
+}
+
+
+// to print a result based on gender and age passed in command line argument
+
+import java.util.*;
+public class Intrest
+{
+public static void main(String[]args)
+{
+int i=Integer.parseInt(args[1]);
+String s1=args[0];
+String str="female";
+String str1="male";
+if(s1.equals(str) && ( i>=1&& i<=58))
+{
+System.out.println("8.2%");
+}
+else if(s1.equals(str)&& (i>=59&& i<=120))
+{
+System.out.println("7.6%");
+}
+else if(s1.equals(str1) &&( i>=1&&i<=60))
+{
+System.out.println("9.2%");
+}
+else if(s1.equals(str1) &&( i>=61&&i<=120))
+{
+System.out.println("8.3%");
+}
+else
+{
+System.out.println("no intrests");
+}
+}
+}
+
+// programm to change upper case charcter to lower case and vice versa
+
+
+import java.util.*;
+import java.lang.Character;
+public class UppToLow
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+char ch=sc.next().charAt(0);
+if(ch>=65 && ch<=96)
+{
+char ch1=Character.toLowerCase(ch);
+System.out.println(ch+"->"+ch1);
+}
+else
+{
+System.out.println(ch+"->"+Character.toUpperCase(ch));
+}
+}
+}
+
+// programm to print a colurs based on colour code
+
+
+ import java.util.*;
+public class ColorCode
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+char ch=sc.next().charAt(0);
+switch(ch)
+{
+case 'R':
+{
+	System.out.println("Red");
+	break;
+}
+case 'B':
+{
+	System.out.println("Blue");
+	break;
+}
+case 'G':
+{
+	System.out.println("Green");
+	break;
+}
+case 'O':
+{
+	System.out.println("Orange");
+	break;
+}
+case 'Y':
+{
+	System.out.println("Yellow");
+	break;
+}
+case 'W':
+{
+	System.out.println("White");
+	break;
+}
+default:
+{
+	System.out.println("invalid code");
+}
+}
+}
+}
+
+// program to print the month
+
+ import java.util.*;
+public class Month
+{
+public static void main(String[] args)
+{
+int i=Integer.parseInt(args[0]);
+switch(i)
+{
+case 1:
+{
+	System.out.println("January");
+	break;
+}
+case 2:
+{
+	System.out.println("Febrauary");
+	break;
+}
+case 3:
+{
+	System.out.println("March");
+	break;
+}
+case 4:
+{
+	System.out.println("April");
+	break;
+}
+case 5:
+{
+	System.out.println("May");
+	break;
+}
+case 6:
+{
+	System.out.println("June");
+	break;
+}
+case 7:
+{
+	System.out.println("July");
+	break;
+}
+case 8:
+{
+	System.out.println("August");
+	break;
+}
+case 9:
+{
+	System.out.println("September");
+	break;
+}
+case 10:
+{
+	System.out.println("October");
+	break;
+}
+case 11:
+{
+	System.out.println("November");
+	break;
+}
+case 12:
+{
+	System.out.println("December");
+	break;
+}
+default:
+{
+	System.out.println("invalid month");
+}
+}
+}
+}
+
+// program to print 10 nos
+
+import  java.util.*;
+public class PrintNos
+{
+public static void main(String[] args)
+{
+for(int i=1;i<=10;i++)
+{
+System.out.print(i+"\t");
+}
+}
+}
