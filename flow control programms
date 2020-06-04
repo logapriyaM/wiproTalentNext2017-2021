@@ -222,3 +222,243 @@ System.out.print(i+"\t");
 }
 }
 }
+
+
+// program to print even nos between 23 and 57
+
+mport java.util.*;
+public class PrintEven
+{
+public static void main(String[] args)
+{
+for(int i=23;i<57;i++)
+{
+if(i%2==0)
+{
+System.out.println(i);
+}
+}
+}
+}
+// prpgram to check a prime no
+
+
+mport java.util.*;
+public class Prime
+{
+public static void main(String[] agrs)
+{
+int flag=0;
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=2;i<n;i++)
+{
+	if(n%i==0)
+	{
+		flag=1;
+		break;
+	}
+	
+}
+if(flag==0)
+{
+System.out.println(n+"is  a prime");
+}
+else
+{
+System.out.println(n+"is not a prime");
+}
+}
+}
+
+// programto print prime no betewwen 10 to 99
+
+import java.util.*;
+public class PrimeNo
+{
+public static void main(String[] args)
+{
+int flag=0;
+for(int n=10;n<=99;n++)
+{
+	if(n==1 || n==0)
+	{
+		continue;
+	}
+
+	for(int i=2;i<=n/2;i++)
+	{
+		if(n%i==0)
+		{
+			flag=1;	
+			break;  
+		}
+	}
+	if(flag==0)
+	{
+		System.out.println(n);
+	}
+}
+}
+}
+
+
+// programm to print prime get input from command line argument
+
+import java.util.*;
+public class PrimeCommand
+{
+public static void main(String[] args)
+{
+int flag=0;
+int n=Integer.parseInt(args[0]);
+for(int i=2;i<n;i++)
+{
+	if(n%i==0)
+	{
+		flag=1;
+		break;
+	}
+	
+}
+if(args.length==0 )
+{
+System.out.println("please enter a integer");
+}
+ else if(n==1)
+{
+System.out.println("1 is nither prime nor composite ");
+}
+else if(n==0)
+{
+System.out.println("0 is nither prime nor composite ");
+}
+else if(flag==0)
+{
+System.out.println(n+"is  a prime");
+}
+else
+{
+System.out.println(n+"is not a prime");
+}
+}
+}
+
+
+
+// program to print sum of digits
+
+import java.util.*;
+public class SumDigits
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int sum=0;
+int rem;
+while(n!=0)
+{
+	rem=n%10;
+	sum=sum+rem;
+	n=n/10;
+}
+System.out.println(sum);
+}
+}
+
+// program to print floyds traingle
+
+import java.util.*;
+public class Floyds
+{
+public static void main(String[] args)
+{
+int n=Integer.parseInt(args[0]);
+for(int i=1;i<=n;i++)
+{
+for(int j=0;j<i;j++)
+{
+System.out.print("*");
+}
+System.out.print("\n");
+}
+}
+}
+// program to find reverse of a number
+
+import java.util.*;
+public class Reverse
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int rev=0;
+int rem;
+while(n!=0)
+{
+	rem=n%10;
+	rev=rev*10+rem;
+	n=n/10;
+}
+System.out.println(rev);
+}
+}
+
+// program to find a palindrome
+
+import java.util.*;
+public class Pal
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int rev=0;
+int rem;
+int t=n;
+while(n!=0)
+{
+	rem=n%10;
+	rev=rev*10+rem;
+	n=n/10;
+}
+if(t==rev)
+{
+System.out.println(t+"  is palindrome");
+}
+else
+{
+System.out.println(t+"  not is palindrome");
+}
+}
+}
+
+
+// program to find 1 st 5 nos divisible by 2 ,3 and 5
+
+import java.util.*;
+public class Divisible
+{
+public static void main(String[] args)
+{
+int n=0;
+int i=1;
+while(n!=5)
+{
+if(i%2==0 && i%3==0 && i%5==0)
+{
+System.out.println(i);
+n++;
+i++;
+}
+else
+{
+i++;
+continue;
+}
+}
+}
+}
+
